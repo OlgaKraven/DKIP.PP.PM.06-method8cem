@@ -1,0 +1,55 @@
+site_name: ПП.ПМ.06 Сопровождение информационных систем
+
+use_directory_urls: false
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/logo.png
+  language: ru
+  features:
+    - content.code.copy     # кнопка "копировать"
+    - content.image.zoom    # zoom картинок
+    - navigation.top        # "наверх"
+    - navigation.tracking   # подсветка активного пункта в правом TOC
+    - toc.follow            # правый TOC следует за прокруткой
+
+plugins:
+  - glightbox
+  - search
+
+nav:
+    - Главная: index.md
+    - Предметные области: domain.md
+    - Теория:
+        - Этап 1. Характеристика сопровождаемой системы: theory/stage1.md
+        - Этап 2. Организация службы сопровождения: theory/stage2.md
+        - Этап 3. Инциденты и управление изменениями: theory/stage3.md
+        - Этап 4. Непрерывность и контроль качества: theory/stage4.md
+    - Практика:
+        - Этап 1. Характеристика сопровождаемой системы: practice/stage1.md
+        - Этап 2. Организация службы сопровождения: practice/stage2.md
+        - Этап 3. Инциденты и управление изменениями: practice/stage3.md
+        - Этап 4. Непрерывность и контроль качества: practice/stage4.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
+
+extra_css:
+  - assets/stylesheets/extra.css

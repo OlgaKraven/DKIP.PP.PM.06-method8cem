@@ -1,0 +1,1512 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="stage2.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 1. Характеристика сопровождаемой системы - ПП.ПМ.06 Сопровождение информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.06 Сопровождение информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.06 Сопровождение информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.06 Сопровождение информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 1. Характеристика сопровождаемой системы
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.06 Сопровождение информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.06 Сопровождение информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.06 Сопровождение информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Характеристика сопровождаемой системы
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="stage1.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Характеристика сопровождаемой системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 1. Характеристика сопровождаемой информационной системы в условиях эксплуатации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 1. Характеристика сопровождаемой информационной системы в условиях эксплуатации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Понятие сопровождения информационной системы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Паспорт эксплуатируемой системы как основа сопровождения
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. Назначение системы в эксплуатации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Назначение системы в эксплуатации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Что описывает данный раздел
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2. Типовой перечень характеристик
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Категории пользователей и их зависимость от системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Категории пользователей и их зависимость от системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1. Зачем анализировать зависимость пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2. Виды зависимости
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3. Типовые категории пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Эксплуатационная среда
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5. Эксплуатационная среда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1. Архитектурный тип системы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.2. Ключевые параметры эксплуатационной среды
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. Факторы, обуславливающие необходимость сопровождения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Факторы, обуславливающие необходимость сопровождения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1. Внутренние факторы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.2. Внешние факторы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.3. Классификация факторов по виду сопровождения
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7. Результат этапа
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Организация службы сопровождения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Инциденты и управление изменениями
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Непрерывность и контроль качества
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Характеристика сопровождаемой системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Организация службы сопровождения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Инциденты и управление изменениями
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Непрерывность и контроль качества
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 1. Характеристика сопровождаемой информационной системы в условиях эксплуатации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Этап 1. Характеристика сопровождаемой информационной системы в условиях эксплуатации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Понятие сопровождения информационной системы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Паспорт эксплуатируемой системы как основа сопровождения
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. Назначение системы в эксплуатации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Назначение системы в эксплуатации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1. Что описывает данный раздел
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2. Типовой перечень характеристик
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Категории пользователей и их зависимость от системы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. Категории пользователей и их зависимость от системы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1. Зачем анализировать зависимость пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2. Виды зависимости
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3. Типовые категории пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Эксплуатационная среда
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5. Эксплуатационная среда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1. Архитектурный тип системы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.2. Ключевые параметры эксплуатационной среды
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6. Факторы, обуславливающие необходимость сопровождения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Факторы, обуславливающие необходимость сопровождения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1. Внутренние факторы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.2. Внешние факторы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.3. Классификация факторов по виду сопровождения
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7. Результат этапа
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Теория</h1>
+<h2 id="1">Этап 1. Характеристика сопровождаемой информационной системы в условиях эксплуатации</h2>
+<blockquote>
+<p>Внимание! Все схемы в примере являются схематичными, требуется учитывать нотации при создании отчёта.</p>
+</blockquote>
+<hr>
+<h3 id="11">1.1. Понятие сопровождения информационной системы</h3>
+<p><strong>Сопровождение информационной системы</strong> — совокупность работ, выполняемых после ввода системы в эксплуатацию с целью поддержания её работоспособности, соответствия изменяющимся требованиям и обеспечения непрерывности деятельности организации.</p>
+<p>В отличие от <strong>разработки</strong>, которая создаёт систему, сопровождение работает с уже функционирующим продуктом. Объектом сопровождения является не концепт или проект, а живая система, от которой зависит ежедневная деятельность пользователей.</p>
+<p>Согласно международному стандарту ГОСТ Р ИСО/МЭК 14764, сопровождение включает четыре вида деятельности:</p>
+<table>
+<thead>
+<tr>
+<th>Вид сопровождения</th>
+<th>Цель</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Корректирующее</strong></td>
+<td>Устранение обнаруженных дефектов</td>
+<td>Исправление ошибки в расчёте</td>
+</tr>
+<tr>
+<td><strong>Адаптивное</strong></td>
+<td>Приспособление к изменениям среды</td>
+<td>Переход на новый формат отчётности</td>
+</tr>
+<tr>
+<td><strong>Совершенствующее</strong></td>
+<td>Улучшение функционала по запросам</td>
+<td>Добавление нового фильтра в отчёт</td>
+</tr>
+<tr>
+<td><strong>Профилактическое</strong></td>
+<td>Предотвращение будущих сбоев</td>
+<td>Оптимизация медленных запросов к БД</td>
+</tr>
+</tbody>
+</table>
+<p>Понимание вида сопровождения важно для корректной классификации обращений (Этап 3) и планирования ресурсов службы.</p>
+<hr>
+<h3 id="12">1.2. Паспорт эксплуатируемой системы как основа сопровождения</h3>
+<p><strong>Паспорт системы</strong> — документ, фиксирующий ключевые характеристики ИС как объекта эксплуатации. Он не описывает, как система спроектирована, а описывает, как она используется в реальных условиях.</p>
+<p>Паспорт отвечает на вопросы:</p>
+<ul>
+<li><strong>Что сопровождается?</strong> — назначение, функции, обрабатываемые данные.</li>
+<li><strong>Кто использует?</strong> — категории пользователей и их зависимость от системы.</li>
+<li><strong>В каких условиях?</strong> — тип системы, техническая среда, режим работы.</li>
+<li><strong>Почему требует сопровождения?</strong> — факторы, порождающие необходимость поддержки.</li>
+</ul>
+<p>Паспорт является <strong>исходными данными</strong> для всех последующих этапов практики: без него невозможно ни выстроить службу поддержки (Этап 2), ни корректно классифицировать инциденты (Этап 3), ни определить требования к непрерывности работы (Этап 4).</p>
+<hr>
+<h3 id="13">1.3. Назначение системы в эксплуатации</h3>
+<h4 id="131">1.3.1. Что описывает данный раздел</h4>
+<p>Раздел фиксирует фактическое использование системы: для каких задач она применяется ежедневно, какие операции выполняют пользователи, какие данные в ней обрабатываются.</p>
+<p>Важно разграничить:</p>
+<ul>
+<li><strong>Назначение по проекту</strong> — для чего система создавалась;</li>
+<li><strong>Назначение в эксплуатации</strong> — для чего она фактически используется сейчас.</li>
+</ul>
+<p>Расхождение между этими двумя версиями само по себе является информацией для анализа: оно указывает на то, что функционал может использоваться нестандартно, а часть возможностей — простаивать.</p>
+<h4 id="132">1.3.2. Типовой перечень характеристик</h4>
+<p>При описании назначения системы фиксируются:</p>
+<ul>
+<li><strong>Основные функции</strong> — какие операции выполняет система в ежедневном режиме;</li>
+<li><strong>Обрабатываемые данные</strong> — какие сущности хранятся и обновляются (клиенты, заявки, документы, финансы и т.д.);</li>
+<li><strong>Входные данные</strong> — что поступает в систему извне (данные от пользователей, внешних систем, сканеров документов);</li>
+<li><strong>Выходные данные</strong> — что система выдаёт (отчёты, уведомления, документы, ответы на запросы).</li>
+</ul>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    IN1[Действия пользователей] --&gt;|Ввод данных| SYS[(Информационная система)]
+    IN2[Внешние системы / файлы] --&gt;|Импорт данных| SYS
+    SYS --&gt;|Отчёты, документы| OUT1[Руководство / Внешние получатели]
+    SYS --&gt;|Уведомления, результаты| OUT2[Пользователи]
+    SYS --&gt;|Данные для интеграции| OUT3[Смежные системы]</code></pre>
+<figcaption>
+<p>Рисунок 1 – Обобщённая схема взаимодействия системы со средой эксплуатации</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 1:</strong></p>
+<ul>
+<li>система получает данные от пользователей через интерфейс и от внешних систем через интеграцию;</li>
+<li>на выходе формируются отчёты для руководства, результаты работы для пользователей и данные для смежных систем;</li>
+<li>именно эти потоки определяют, кто зависит от системы и что происходит при её недоступности.</li>
+</ul>
+<hr>
+<h3 id="14">1.4. Категории пользователей и их зависимость от системы</h3>
+<h4 id="141">1.4.1. Зачем анализировать зависимость пользователей</h4>
+<p>Зависимость пользователей от системы определяет <strong>критичность её отказов</strong>. Если система недоступна час, но пользователи могут выполнить операции вручную — это одна ситуация. Если система является единственным способом выполнить задачу, а задача должна быть выполнена немедленно — это совершенно другое.</p>
+<p>Именно степень зависимости пользователей обосновывает требования к срокам устранения инцидентов (SLA), которые будут установлены в Этапе 2.</p>
+<h4 id="142">1.4.2. Виды зависимости</h4>
+<table>
+<thead>
+<tr>
+<th>Степень зависимости</th>
+<th>Описание</th>
+<th>Влияние на SLA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Критическая</strong></td>
+<td>Без системы деятельность невозможна; ручная альтернатива отсутствует</td>
+<td>Минимальное допустимое время недоступности</td>
+</tr>
+<tr>
+<td><strong>Высокая</strong></td>
+<td>Без системы деятельность существенно затруднена; частичная ручная альтернатива возможна, но трудозатратна</td>
+<td>Короткий SLA</td>
+</tr>
+<tr>
+<td><strong>Средняя</strong></td>
+<td>Без системы часть функций выполняется вручную; потери есть, но критичной остановки нет</td>
+<td>Умеренный SLA</td>
+</tr>
+<tr>
+<td><strong>Низкая</strong></td>
+<td>Система удобна, но не обязательна; полная ручная альтернатива есть</td>
+<td>Мягкий SLA</td>
+</tr>
+</tbody>
+</table>
+<h4 id="143">1.4.3. Типовые категории пользователей</h4>
+<p>В зависимости от типа системы могут быть выделены следующие категории:</p>
+<table>
+<thead>
+<tr>
+<th>Категория</th>
+<th>Характер работы с системой</th>
+<th>Типичная зависимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Операционные пользователи</td>
+<td>Работают в системе постоянно, вводят первичные данные</td>
+<td>Высокая / критическая</td>
+</tr>
+<tr>
+<td>Менеджеры / руководители</td>
+<td>Используют для принятия решений и контроля</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Аналитики / контролёры</td>
+<td>Формируют отчёты и аналитику</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Администраторы системы</td>
+<td>Настраивают, обслуживают, управляют правами</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Внешние пользователи / клиенты</td>
+<td>Используют через публичный интерфейс (если есть)</td>
+<td>Зависит от модели</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="15">1.5. Эксплуатационная среда</h3>
+<p>Эксплуатационная среда определяет технические условия, в которых работает система, и является основой для анализа рисков сбоев.</p>
+<h4 id="151">1.5.1. Архитектурный тип системы</h4>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Характеристика</th>
+<th>Особенности сопровождения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web-приложение</td>
+<td>Работает в браузере, сервер в сети</td>
+<td>Обновления централизованы; зависит от сети и сервера</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Устанавливается на рабочих местах</td>
+<td>Обновления на каждое рабочее место; меньше зависимость от сети</td>
+</tr>
+<tr>
+<td>Мобильное</td>
+<td>Работает на смартфонах/планшетах</td>
+<td>Обновления через магазин приложений; разнообразие устройств</td>
+</tr>
+<tr>
+<td>Клиент-серверное</td>
+<td>Клиент + сервер, оба имеют логику</td>
+<td>Сопровождение обеих компонент</td>
+</tr>
+<tr>
+<td>Облачная (SaaS)</td>
+<td>Размещена у провайдера</td>
+<td>Ограниченный контроль; SLA с провайдером</td>
+</tr>
+<tr>
+<td>Гибридное</td>
+<td>Часть локально, часть в облаке</td>
+<td>Сложная зависимость; нужен мониторинг обеих частей</td>
+</tr>
+</tbody>
+</table>
+<h4 id="152">1.5.2. Ключевые параметры эксплуатационной среды</h4>
+<p>Для паспорта системы фиксируются следующие параметры:</p>
+<ul>
+<li><strong>Количество пользователей</strong> — одновременно работающих и общее число учётных записей;</li>
+<li><strong>Режим работы</strong> — часы доступности системы (круглосуточно, в рабочие часы, по расписанию);</li>
+<li><strong>Серверная инфраструктура</strong> — собственные серверы, облако, виртуализация;</li>
+<li><strong>СУБД</strong> — какая база данных используется и её критичность;</li>
+<li><strong>Интеграции</strong> — с какими внешними системами связана ИС (бухгалтерия, почта, ЭДО и т.д.);</li>
+<li><strong>Критичность отказов</strong> — время, в течение которого система может быть недоступна без серьёзных последствий.</li>
+</ul>
+<figure>
+<pre class="mermaid"><code>flowchart TB
+    subgraph PROD[Производственная среда]
+        WEB[Web-сервер / Application Server]
+        DB[(База данных)]
+        FS[Файловое хранилище]
+        WEB &lt;--&gt; DB
+        WEB &lt;--&gt; FS
+    end
+    subgraph USERS[Пользователи]
+        U1[Браузер / Desktop-клиент]
+        U2[Мобильный клиент]
+    end
+    subgraph EXT[Внешние системы]
+        EXT1[Бухгалтерская система]
+        EXT2[Электронная почта]
+        EXT3[Внешние сервисы / API]
+    end
+    U1 --&gt;|HTTPS / LAN| WEB
+    U2 --&gt;|HTTPS| WEB
+    WEB &lt;--&gt;|API / интеграция| EXT1
+    WEB &lt;--&gt;|SMTP| EXT2
+    WEB &lt;--&gt;|REST API| EXT3</code></pre>
+<figcaption>
+<p>Рисунок 2 – Типовая схема эксплуатационной среды информационной системы</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 2:</strong></p>
+<ul>
+<li>пользователи обращаются к системе через браузер, клиентское приложение или мобильное устройство;</li>
+<li>серверная часть включает application server, базу данных и файловое хранилище — каждый компонент является потенциальной точкой отказа;</li>
+<li>внешние интеграции создают дополнительные зависимости: сбой внешней системы может привести к инцидентам в сопровождаемой ИС.</li>
+</ul>
+<hr>
+<h3 id="16">1.6. Факторы, обуславливающие необходимость сопровождения</h3>
+<p>Ни одна информационная система не работает бесконечно в стабильном состоянии без поддержки. Факторы, порождающие потребность в сопровождении, принято разделять на внутренние и внешние.</p>
+<h4 id="161">1.6.1. Внутренние факторы</h4>
+<table>
+<thead>
+<tr>
+<th>Фактор</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ошибки и дефекты</strong></td>
+<td>Ошибки, не выявленные при тестировании; ошибки, возникающие при определённых условиях</td>
+</tr>
+<tr>
+<td><strong>Деградация данных</strong></td>
+<td>Накопление «мусорных» записей, конфликты при параллельном вводе, устаревание данных</td>
+</tr>
+<tr>
+<td><strong>Рост нагрузки</strong></td>
+<td>Увеличение числа пользователей или объёма данных приводит к снижению производительности</td>
+</tr>
+<tr>
+<td><strong>Техническое устаревание</strong></td>
+<td>Изменения в операционных системах, библиотеках, браузерах нарушают совместимость</td>
+</tr>
+<tr>
+<td><strong>Проблемы безопасности</strong></td>
+<td>Обнаруженные уязвимости требуют патчей и настройки</td>
+</tr>
+</tbody>
+</table>
+<h4 id="162">1.6.2. Внешние факторы</h4>
+<table>
+<thead>
+<tr>
+<th>Фактор</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Изменения нормативной базы</strong></td>
+<td>Новые требования законодательства или регуляторов изменяют форматы отчётности, порядок хранения данных</td>
+</tr>
+<tr>
+<td><strong>Изменения внешних систем</strong></td>
+<td>Обновление API партнёров, изменение форматов интеграции</td>
+</tr>
+<tr>
+<td><strong>Запросы пользователей</strong></td>
+<td>Новые бизнес-требования, расширение функционала, изменения рабочих процессов</td>
+</tr>
+<tr>
+<td><strong>Консультационная поддержка</strong></td>
+<td>Пользователи нуждаются в помощи по работе с системой</td>
+</tr>
+</tbody>
+</table>
+<h4 id="163">1.6.3. Классификация факторов по виду сопровождения</h4>
+<figure>
+<pre class="mermaid"><code>flowchart LR
+    F1[Ошибки и дефекты] --&gt; K[Корректирующее]
+    F2[Изменения законодательства\n и внешних систем] --&gt; A[Адаптивное]
+    F3[Запросы на улучшения\n от пользователей] --&gt; S[Совершенствующее]
+    F4[Риски деградации\n и уязвимости] --&gt; P[Профилактическое]</code></pre>
+<figcaption>
+<p>Рисунок 3 – Связь факторов сопровождения с видами деятельности</p>
+</figcaption>
+</figure>
+<p><strong>Пояснение к рисунку 3:</strong></p>
+<ul>
+<li>каждый фактор, обусловливающий необходимость сопровождения, соответствует одному из четырёх видов сопровождения по ГОСТ;</li>
+<li>анализ факторов позволяет заранее планировать состав процессов и ресурсы службы.</li>
+</ul>
+<hr>
+<h3 id="17">1.7. Результат этапа</h3>
+<p>По итогам Этапа 1 документируется паспорт эксплуатируемой системы, включающий:</p>
+<ol>
+<li><strong>Назначение системы в эксплуатации</strong> — что делает система, какие данные обрабатывает.</li>
+<li><strong>Категории пользователей</strong> — кто работает с системой и как зависит от её работоспособности.</li>
+<li><strong>Эксплуатационная среда</strong> — тип системы, технический стек, режим работы, критичность отказов.</li>
+<li><strong>Факторы сопровождения</strong> — почему система требует постоянной поддержки.</li>
+</ol>
+<p>Этот паспорт служит <strong>фундаментом для Этапа 2</strong>: именно категории пользователей и критичность отказов определяют, какие роли нужны в службе сопровождения и каким должен быть регламент реагирования.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
