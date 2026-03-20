@@ -1,0 +1,1012 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="stage2.html">
+      
+      
+        <link rel="next" href="stage4.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Этап 3. Инциденты и управление изменениями - ПП.ПМ.06 Сопровождение информационных систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="ПП.ПМ.06 Сопровождение информационных систем" class="md-header__button md-logo" aria-label="ПП.ПМ.06 Сопровождение информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ПП.ПМ.06 Сопровождение информационных систем
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 3. Инциденты и управление изменениями
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ПП.ПМ.06 Сопровождение информационных систем" class="md-nav__button md-logo" aria-label="ПП.ПМ.06 Сопровождение информационных систем" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    ПП.ПМ.06 Сопровождение информационных систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметные области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Характеристика сопровождаемой системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Организация службы сопровождения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Инциденты и управление изменениями
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Непрерывность и контроль качества
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Характеристика сопровождаемой системы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Организация службы сопровождения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Инциденты и управление изменениями
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="stage3.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Инциденты и управление изменениями
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 3. Анализ инцидентов, обращений и управление изменениями
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Непрерывность и контроль качества
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Этап 3. Анализ инцидентов, обращений и управление изменениями
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Практика</h1>
+<blockquote>
+<p>Внимание! Все схемы в примере являются схематичными, требуется учитывать нотации при создании отчёта.</p>
+</blockquote>
+<h2 id="3">Этап 3. Анализ инцидентов, обращений и управление изменениями</h2>
+<hr>
+<h1 id="_2">Что требуется выполнить в данном разделе</h1>
+<p>В рамках Этапа 3 студент обязан:</p>
+<ol>
+<li>Разграничить инцидентные и сервисные обращения для своей системы с примерами.</li>
+<li>Составить таблицу типовых инцидентов с причинами, последствиями, критичностью и ответственными.</li>
+<li>Описать жизненный цикл обработки инцидента и построить соответствующую схему.</li>
+<li>Разобрать не менее 2–3 конкретных инцидентов: что произошло, почему, как было устранено.</li>
+<li>Описать виды изменений для своей системы с примерами.</li>
+<li>Изложить порядок управления изменениями и построить схему процесса.</li>
+<li>Показать причинно-следственную связь: какие инциденты привели к каким изменениям.</li>
+</ol>
+<hr>
+<h1 id="_3">Важно</h1>
+<p>Приведённые ниже инциденты и изменения основаны на эксплуатации АИС «Деканат» из Этапов 1–2. Студент описывает <strong>реальные или достоверно моделируемые</strong> ситуации своей системы.</p>
+<hr>
+<h2 id="31">3.1. Классификация обращений пользователей АИС «Деканат»</h2>
+<h3 id="311">3.1.1. Инцидентные обращения</h3>
+<p>Ситуации, при которых система функционирует с нарушением:</p>
+<ul>
+<li>пользователь не может войти в систему (ошибка аутентификации, блокировка учётной записи);</li>
+<li>ошибка при сохранении оценки или записи о посещаемости;</li>
+<li>недоступность модуля расписания;</li>
+<li>некорректное отображение данных в ведомости (неверный расчёт среднего балла);</li>
+<li>ошибка при формировании отчёта (выгрузка пустая или содержит неверные данные);</li>
+<li>система недоступна полностью (сервер не отвечает).</li>
+</ul>
+<h3 id="312">3.1.2. Сервисные обращения</h3>
+<p>Ситуации, при которых система работает штатно, но нужна помощь или доработка:</p>
+<ul>
+<li>запрос нового фильтра в журнале успеваемости («нужен фильтр по задолженностям»);</li>
+<li>обучение нового преподавателя работе с системой;</li>
+<li>запрос нового формата выгрузки (по требованию нового бланка ведомости);</li>
+<li>запрос на добавление новой специальности в справочник;</li>
+<li>запрос на изменение правил блокировки учётной записи.</li>
+</ul>
+<hr>
+<h2 id="32">3.2. Характеристика типовых инцидентов</h2>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Инцидент</th>
+<th>Возможная причина</th>
+<th>Последствия</th>
+<th style="text-align: center;">Критичность</th>
+<th style="text-align: center;">Ответственный</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Пользователь не может войти в систему</td>
+<td>Ошибка пароля; истёк срок действия; блокировка после 5 неудачных попыток</td>
+<td>Простой пользователя; задержка ввода данных</td>
+<td style="text-align: center;">Средняя</td>
+<td style="text-align: center;">Специалист поддержки</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ошибка при сохранении оценки</td>
+<td>Потеря соединения с БД в момент записи; конкурентный доступ к записи</td>
+<td>Потеря введённых данных; необходимость повторного ввода</td>
+<td style="text-align: center;">Высокая</td>
+<td style="text-align: center;">Специалист сопровождения</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Система полностью недоступна</td>
+<td>Зависание Apache; переполнение диска на сервере; сетевой сбой</td>
+<td>Полная остановка учебной части и преподавателей</td>
+<td style="text-align: center;">Критическая</td>
+<td style="text-align: center;">Системный администратор</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Некорректный расчёт среднего балла в ведомости</td>
+<td>Ошибка в формуле при учёте пересдач</td>
+<td>Неверные данные в официальных документах</td>
+<td style="text-align: center;">Высокая</td>
+<td style="text-align: center;">Специалист сопровождения</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Права доступа не соответствуют роли</td>
+<td>Ошибка при заведении нового пользователя; не удалена учётная запись уволенного</td>
+<td>Риск несанкционированного доступа или блокировки работы</td>
+<td style="text-align: center;">Высокая</td>
+<td style="text-align: center;">Системный администратор</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Медленная загрузка модуля отчётности</td>
+<td>Рост объёма данных в БД; неоптимизированные запросы</td>
+<td>Задержка при формировании ведомостей в период сессии</td>
+<td style="text-align: center;">Средняя</td>
+<td style="text-align: center;">Специалист сопровождения</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Дублирование записи студента в системе</td>
+<td>Параллельный ввод разными секретарями; отсутствие проверки уникальности</td>
+<td>Путаница в данных; ошибки в отчётах</td>
+<td style="text-align: center;">Средняя</td>
+<td style="text-align: center;">Специалист сопровождения</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="33">3.3. Жизненный цикл обработки инцидента</h2>
+<h3 id="331">3.3.1. Схема жизненного цикла</h3>
+<figure>
+<pre class="mermaid"><code>flowchart TD
+    A[Обнаружение\nПользователь или мониторинг] --&gt; B[Регистрация заявки в журнале\nСпециалист поддержки\nfixация симптомов, категории, приоритета]
+    B --&gt; C[Классификация и приоритизация\nпо таблице типовых инцидентов]
+    C --&gt; D{Тип инцидента}
+    D --&gt;|Типовой\nпароль, права| E[Решение на 1-й линии\nСпециалист поддержки]
+    D --&gt;|Сложный\nошибка данных, логика| F[Эскалация на 2-ю линию\nСпециалист сопровождения]
+    D --&gt;|Инфраструктурный\nсервер, сеть| G[Системный администратор]
+    E --&gt; H[Проверка пользователем]
+    F --&gt; I[Анализ корневой причины]
+    I --&gt; J[Устранение]
+    J --&gt; H
+    G --&gt; K[Технические работы]
+    K --&gt; H
+    H --&gt;|Не решено| I
+    H --&gt;|Решено| L[Закрытие заявки\nфиксация решения и причины]
+    L --&gt; M[Пополнение базы знаний]
+    M --&gt;|Повторяющийся инцидент| N[Инициирование изменения]</code></pre>
+<figcaption>
+<p>Рисунок 1 – Жизненный цикл обработки инцидента в АИС «Деканат»</p>
+</figcaption>
+</figure>
+<h3 id="332">3.3.2. Разбор конкретных инцидентов</h3>
+<hr>
+<h4 id="_4">Инцидент А: «Система недоступна в начале учебного дня»</h4>
+<p><strong>Ситуация:</strong> В 8:15 секретарь учебной части обнаружила, что АИС «Деканат» не открывается в браузере. Сообщения об ошибке: «504 Gateway Timeout».</p>
+<p><strong>Шаг 1 — Обнаружение:</strong> Секретарь сообщила методисту по телефону в 8:17.</p>
+<p><strong>Шаг 2 — Регистрация:</strong> Методист зафиксировал заявку в журнале в 8:20. Приоритет: Критический (система полностью недоступна).</p>
+<p><strong>Шаг 3 — Классификация:</strong> Инфраструктурный инцидент → эскалация системному администратору.</p>
+<p><strong>Шаг 4 — Анализ:</strong> Администратор подключился к серверу. Причина: Apache завис из-за исчерпания лимита подключений к MySQL (параметр <code>max_connections</code> = 50, в 8:00–8:30 одновременно подключились 53 пользователя).</p>
+<p><strong>Шаг 5 — Устранение:</strong> Перезапуск Apache; увеличение <code>max_connections</code> до 100.</p>
+<p><strong>Шаг 6 — Проверка:</strong> Секретарь подтвердила доступность в 8:52.</p>
+<p><strong>Шаг 7 — Закрытие:</strong> Заявка закрыта в 9:00. В журнале зафиксировано: причина, решение, рекомендация — настроить мониторинг числа подключений.</p>
+<p><strong>Корневая причина:</strong> Конфигурация сервера не была пересмотрена при росте числа пользователей за последний учебный год.</p>
+<p><strong>Время устранения:</strong> 32 минуты (в рамках SLA для критического инцидента — до 2 часов).</p>
+<hr>
+<h4 id="_5">Инцидент Б: «Некорректный средний балл в ведомости»</h4>
+<p><strong>Ситуация:</strong> Заведующий отделением при проверке ведомости промежуточной аттестации обнаружил, что средний балл студента, имеющего пересдачу, рассчитан некорректно (учитывается первая оценка, а не итоговая после пересдачи).</p>
+<p><strong>Регистрация:</strong> Заявка высокого приоритета. Передана специалисту сопровождения.</p>
+<p><strong>Анализ:</strong> В коде функции расчёта среднего балла не предусмотрена выборка именно последней записи оценки по предмету — берётся первая по дате. При повторных попытках сдачи в таблице хранятся все оценки, но алгоритм не отбирает нужную.</p>
+<p><strong>Устранение:</strong> Внесено изменение в запрос к БД (<code>ORDER BY date DESC LIMIT 1</code>). Изменение протестировано на тестовой копии БД.</p>
+<p><strong>Проверка:</strong> Ведомость пересчитана; заведующий подтвердил корректность.</p>
+<p><strong>Связь с управлением изменениями:</strong> По итогам инцидента инициирован запрос на изменение RFC-2024-03 «Корректировка алгоритма расчёта среднего балла с учётом пересдач». Изменение внедрено как <strong>корректирующее</strong>.</p>
+<hr>
+<h2 id="34">3.4. Управление изменениями в АИС «Деканат»</h2>
+<h3 id="341">3.4.1. Виды изменений и их основания</h3>
+<table>
+<thead>
+<tr>
+<th>Вид изменения</th>
+<th>Основание</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Корректирующее</strong></td>
+<td>Устранение выявленного дефекта</td>
+<td>RFC-2024-03: исправление алгоритма расчёта среднего балла</td>
+</tr>
+<tr>
+<td><strong>Адаптивное</strong></td>
+<td>Изменение нормативных требований</td>
+<td>RFC-2024-07: новый формат выгрузки ведомости по требованию Министерства</td>
+</tr>
+<tr>
+<td><strong>Совершенствующее</strong></td>
+<td>Запросы пользователей</td>
+<td>RFC-2024-11: добавление фильтра «студенты с задолженностью» в модуль успеваемости</td>
+</tr>
+<tr>
+<td><strong>Профилактическое</strong></td>
+<td>Анализ деградации</td>
+<td>RFC-2024-15: оптимизация индексов БД при росте объёма данных свыше 500 000 записей</td>
+</tr>
+</tbody>
+</table>
+<h3 id="342">3.4.2. Порядок управления изменением</h3>
+<figure>
+<pre class="mermaid"><code>flowchart TD
+    A[Основание:\nинцидент / обращение / нормативный акт / план] --&gt; B[Регистрация RFC\nфиксация сути, цели, объёма изменения]
+    B --&gt; C[Оценка влияния\nчто может нарушиться при внедрении]
+    C --&gt; D{Согласование\nРуководитель сопровождения}
+    D --&gt;|Отклонено| Z[Отказ с обоснованием\nзапись в журнале]
+    D --&gt;|Согласовано| E[Реализация\nСпециалист сопровождения]
+    E --&gt; F[Тестирование на копии БД\nпроверка корректности]
+    F --&gt;|Тест не пройден| E
+    F --&gt;|Тест пройден| G[Внедрение в рабочую среду\nв нерабочее время]
+    G --&gt; H[Обновление документации\nинструкции пользователей]
+    H --&gt; I[Контроль результата\nподтверждение от пользователей]
+    I --&gt; J[Закрытие RFC\nсвязь с исходной заявкой]</code></pre>
+<figcaption>
+<p>Рисунок 2 – Процесс управления изменениями в АИС «Деканат»</p>
+</figcaption>
+</figure>
+<h3 id="343">3.4.3. Подробный разбор одного изменения</h3>
+<h4 id="rfc-2024-07">RFC-2024-07: «Новый формат выгрузки ведомости итоговой аттестации»</h4>
+<p><strong>Основание:</strong> Приказ Министерства образования от сентября 2024 года, устанавливающий новую форму ведомости итоговой аттестации с обязательным указанием кода специальности ФГОС.</p>
+<p><strong>Вид изменения:</strong> Адаптивное.</p>
+<p><strong>Шаг 1 — Инициирование:</strong> Заместитель директора по учебной работе уведомила руководителя сопровождения об изменении формы.</p>
+<p><strong>Шаг 2 — Регистрация RFC:</strong> Специалист сопровождения зафиксировал запрос. Описание: добавить в шаблон выгрузки ведомости поле «Код специальности ФГОС»; обновить запрос к БД для получения данного поля.</p>
+<p><strong>Шаг 3 — Оценка влияния:</strong> Изменяется только шаблон выгрузки (PHP-шаблон + SQL-запрос). Остальные модули не затрагиваются. Риск низкий.</p>
+<p><strong>Шаг 4 — Согласование:</strong> Руководитель сопровождения согласовал. Срок реализации — 5 рабочих дней до начала сессии.</p>
+<p><strong>Шаг 5 — Реализация:</strong> Специалист сопровождения внёс изменения в шаблон выгрузки и запрос. В справочник специальностей добавлено поле «Код ФГОС».</p>
+<p><strong>Шаг 6 — Тестирование:</strong> Выгрузка проверена на тестовой копии БД с данными одной группы. Поле отображается корректно. Протокол тестирования подписан.</p>
+<p><strong>Шаг 7 — Внедрение:</strong> Изменение внедрено в пятницу вечером (нерабочее время).</p>
+<p><strong>Шаг 8 — Обновление документации:</strong> В руководстве пользователя для секретаря учебной части добавлено описание нового поля в ведомости.</p>
+<p><strong>Шаг 9 — Контроль результата:</strong> Секретарь сформировала ведомость в понедельник утром и подтвердила корректность. RFC-2024-07 закрыт.</p>
+<hr>
+<h2 id="35-3">3.5. Вывод по этапу 3</h2>
+<p>По итогам Этапа 3 зафиксировано:</p>
+<ol>
+<li>
+<p><strong>Классификация обращений</strong> — 7 типов инцидентных обращений и 5 типов сервисных обращений для АИС «Деканат».</p>
+</li>
+<li>
+<p><strong>Типовые инциденты</strong> — 7 инцидентов с характеристикой причин, последствий, критичности и ответственных.</p>
+</li>
+<li>
+<p><strong>Жизненный цикл инцидента</strong> — 9 шагов от обнаружения до закрытия и пополнения базы знаний; разобраны 2 конкретных случая.</p>
+</li>
+<li>
+<p><strong>Виды изменений</strong> — 4 изменения разного типа (корректирующее, адаптивное, совершенствующее, профилактическое).</p>
+</li>
+<li>
+<p><strong>Процедура управления изменениями</strong> — 9 шагов от инициирования до закрытия RFC; разобрано 1 изменение подробно.</p>
+</li>
+</ol>
+<p>Накопленные данные об инцидентах и изменениях становятся <strong>входными данными для Этапа 4</strong>: метрики качества будут рассчитываться именно на их основе.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.image.zoom", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../assets/js/mermaid-init.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
