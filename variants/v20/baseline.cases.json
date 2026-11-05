@@ -1,0 +1,34 @@
+[
+  {
+    "name": "All records",
+    "path": "/api/records",
+    "status": 200,
+    "ids": [
+      2001,
+      2002,
+      2003
+    ]
+  },
+  {
+    "name": "Before all records",
+    "path": "/api/records?end=2027-03-01",
+    "status": 200,
+    "ids": []
+  },
+  {
+    "name": "After all records",
+    "path": "/api/records?end=2027-03-05",
+    "status": 200,
+    "ids": [
+      2001,
+      2002,
+      2003
+    ]
+  },
+  {
+    "name": "Invalid date",
+    "path": "/api/records?end=bad",
+    "status": 400,
+    "error": "end must be one date YYYY-MM-DD"
+  }
+]
