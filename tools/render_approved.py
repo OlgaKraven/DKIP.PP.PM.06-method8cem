@@ -120,6 +120,11 @@ def pdf(root, target, data, section, release=False):
                 parts.append(Paragraph(text or '&#160;',mono))
         else:
             parts=paras(block['text'])
+            if block.get('url'):
+                parts.append(Paragraph('<link href="'+ESC(block['url'],quote=True)+'" color="#a50b12"><u>'+ESC(block['link_label'])+'</u></link>',body))
+            if block.get('check_text'):
+                parts.extend([Spacer(1,14),HRFlowable(width=inner,thickness=.6,color=colors.HexColor('#dfe1e5'),spaceAfter=11)])
+                parts.extend(paras(block['check_text'],caption))
             if 'провер' in block['title'].lower():
                 parts=[HRFlowable(width=inner,thickness=.6,color=colors.HexColor('#dfe1e5'),spaceAfter=11)]+parts
         return Card(n,block['title'],parts)

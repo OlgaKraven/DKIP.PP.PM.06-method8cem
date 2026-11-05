@@ -5,7 +5,11 @@ var app = builder.Build();
 app.UseDefaultFiles(); app.UseStaticFiles();
 var gate = new object();
 void Log(string kind, object detail) { lock(gate) File.AppendAllText("events.jsonl", JsonSerializer.Serialize(new { at=DateTimeOffset.UtcNow, kind, detail })+Environment.NewLine); }
-List<Entry> Read() => JsonSerializer.Deserialize<List<Entry>>(File.ReadAllText("data.json"), new JsonSerializerOptions { PropertyNameCaseInsensitive=true }) ?? throw new InvalidDataException("Empty data");
+List<Entry> Read() {
+    var entries=JsonSerializer.Deserialize<List<Entry>>(File.ReadAllText("data.json"), new JsonSerializerOptions { PropertyNameCaseInsensitive=true }) ?? throw new InvalidDataException("Empty data");
+    if(entries.Any(e=>e is null || e.Id<=0 || e.Title is null || !DateOnly.TryParseExact(e.Date,"yyyy-MM-dd",CultureInfo.InvariantCulture,DateTimeStyles.None,out _)) || entries.Select(e=>e.Id).Distinct().Count()!=entries.Count) throw new InvalidDataException("Invalid record schema");
+    return entries;
+}
 app.MapGet("/api/context", () => Results.Text(File.ReadAllText("context.json"), "application/json"));
 app.MapGet("/api/records", (HttpRequest request) => {
     var sw=System.Diagnostics.Stopwatch.StartNew();

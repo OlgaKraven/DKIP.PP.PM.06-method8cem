@@ -90,6 +90,8 @@ def web(specs,path,title,style):
             elif x['kind']=='link':s.append('<a href="'+E(x['url'])+'">'+E(x['text'])+'</a>')
             elif x['kind']=='image':s.append('<figure><img src="'+E(x['path'])+'" alt="'+E(x['text'])+'"><figcaption>'+E(x['text'])+'</figcaption></figure>')
             else:s.extend('<p>'+E(y)+'</p>' for y in x['text'].split('\n\n'))
+            if x['kind']!='link' and x.get('url'):s.append('<p><a href="'+E(x['url'])+'">'+E(x['link_label'])+'</a></p>')
+            if x.get('check_text'):s.append('<p style="border-top:1px solid #dfe1e5;margin-top:14px;padding-top:11px;font-size:13px">'+E(x['check_text'])+'</p>')
             s.append('</section></div>')
         s.append('</div></article>')
     path.write_text(''.join(s)+'</html>',encoding='utf-8')
@@ -104,6 +106,9 @@ def build():
          b('Первое действие и маршрут',f'Распаковать v{n}.zip; запустить по п. 3.1 методики. Сверить номер, область, ID. Выполнить паспорт → роли/RACI/процессы/SLA → инцидент → контрпример → изменение → восстановление → метрики → сдачу. Образец 01 показывает способ; выполнять только свой вариант.'),
          b('Индивидуальные условия и ожидание',f'В запросе end={end} по контракту ожидаются [{a},{c}], исходный дефект даёт только [{a}]. После исправления перенести запись {d} на {end}; ожидать [{a},{c},{d}]. Вернуть исходную дату и ожидание двух ID. Предел реакции: {v["reaction_minutes"]} мин; восстановления: {v["recovery_minutes"]} мин. Объявить рабочее окно, обосновать критичность и сравнить с реальными UTC-событиями, не подставляя условные времена.'),
          b('Проверка и доказательства','INC-01/INC-02/REQ-03, код до/после, FAIL→PASS, коллекции, копия/хеши/восстановление, события/расчёты и чистый повтор. В отчёте — паспорт, RACI, 14 процессов, шесть схем, собственные снимки и ссылка репозитория; приложить README, инструкцию и формы по п. 3.27. Проверять состав данных, а не только HTTP 200.')))
+    for area in areas:
+        download=area['blocks'].pop(1);area['blocks'][0].update(url=download['url'],link_label=download['text'])
+        area['blocks'][2]['check_text']='Проверка и доказательства: '+area['blocks'].pop(3)['text']
     # The exact responsible expression remains readable independently of the UI image.
     change_page=next(x for x in guide if x['title']=='3. Методика — изменение и откат')
     change_page['blocks'].insert(2,code('Условие до и после','До: датаЗаписи < end\nПосле: датаЗаписи <= end\n\nВ Program.cs датаЗаписи вычисляется выражением:\nDateOnly.ParseExact(e.Date,"yyyy-MM-dd",\n    CultureInfo.InvariantCulture)'))
